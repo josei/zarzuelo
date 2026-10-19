@@ -113,6 +113,20 @@ export default function Entity({ kind }: { kind: "works" | "people" | "venues" }
           </div>
         ))}
       </dl>
+      {e.authored && e.authored.length > 0 && (
+        <section className="obras-autor">
+          <h2>Obras <small>({e.authored.length})</small></h2>
+          <ul className="lista-obras">
+            {e.authored.map((w) => (
+              <li key={w.id}>
+                <Link to={`/obra/${w.id}`}>{w.label}</Link>
+                {w.year ? <small> {w.year}</small> : null}
+                <small className="rol-obra"> · {w.roles.map((r) => (r === "composer" ? "música" : "libreto")).join(" y ")}</small>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {e.scores && e.scores.length > 0 && (
         <section className="partituras">
           <h2>Partituras <small>({e.scores.reduce((n, sc) => n + sc.files.length, 0)})</small></h2>

@@ -21,7 +21,7 @@ export interface ClaimOut {
   id: string; property: string; value: string; value_label: string | null; value_link: string | null; value_type: string; status: string; hedge: string | null;
   confidence: number; source_kind: string; alternative: boolean; source_families: string[]; wikidata_rank: string | null; references: string[]; n_claims: number; evidence_ids: string[]; relations: { claim_a: string; claim_b: string; relation: string }[];
 }
-export interface EntityOut { id: string; type: string; label: string; labels_alt: string[]; external_ids: Record<string, string>; claims: ClaimOut[]; narratives: NarrativeOut[]; biography: Biography | null; summary: Summary | null; scores: ScoreSet[]; videos: VideoOut[]; documents: DocItem[]; documents_total: number; rism: { label: string; url: string }[]; rism_total: number; rism_url: string | null; }
+export interface EntityOut { id: string; type: string; label: string; labels_alt: string[]; external_ids: Record<string, string>; claims: ClaimOut[]; narratives: NarrativeOut[]; biography: Biography | null; summary: Summary | null; scores: ScoreSet[]; videos: VideoOut[]; authored: { id: string; label: string; year: number | null; roles: string[] }[]; documents: DocItem[]; documents_total: number; rism: { label: string; url: string }[]; rism_total: number; rism_url: string | null; }
 export interface NarrativeOut { id: string; type: string; title: string; summary: string; time: string | null; status: string; evidence_ids: string[] }
 export interface IndexItem { id: string; label: string; year?: string | null; composer?: (string | null)[] }
 

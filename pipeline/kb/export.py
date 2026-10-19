@@ -164,6 +164,7 @@ def export_all(con: sqlite3.Connection, out: Path = OUT) -> dict:
     name_pat, name_map = _name_index(ents)
     docs_by_entity = documents_view(con, out, ents)
     videos_view(con, out, ents)
+    authored = authored_works(con, ents)
     for eid, e in ents.items():
         d = TYPE_DIR.get(e["type"])
         if not d or e["provisional"]:
@@ -179,7 +180,7 @@ def export_all(con: sqlite3.Connection, out: Path = OUT) -> dict:
             narr.append({"id": n["id"], "type": n["type"], "title": n["title"], "summary": n["summary"], "time": n["time_edtf"],
                          "status": n["status"], "evidence_ids": [r["passage_id"] for r in ev]})
         _w(out / d / f"{eid}.json", {"id": eid, "type": e["type"], "label": e["label"], "labels_alt": _clean_alt_labels(e["label"], json.loads(e["labels_alt"])),
-                                      "external_ids": json.loads(e["external_ids"]), "claims": claims, "narratives": narr, "biography": bio, "summary": summ, "scores": scores_of(con, eid) if e["type"] == "work" else [], "videos": videos_of(con, eid),
+                                      "external_ids": json.loads(e["external_ids"]), "claims": claims, "narratives": narr, "biography": bio, "summary": summ, "scores": scores_of(con, eid) if e["type"] == "work" else [], "videos": videos_of(con, eid), "authored": authored.get(eid, []) if e["type"] == "person" else [],
                                       "documents": (docs_by_entity.get(eid) or [])[:12], "documents_total": len(docs_by_entity.get(eid) or []),
                                       "rism": rism_of(con, eid)[:15] if e["type"] == "person" else [], "rism_total": len(rism_of(con, eid)) if e["type"] == "person" else 0,
                                       "rism_url": f"https://rism.online/{json.loads(e['external_ids']).get('rism_person')}" if e["type"] == "person" and json.loads(e["external_ids"]).get("rism_person") else None})
@@ -437,6 +438,22 @@ def documents_view(con, out: Path, ents) -> dict[str, list[dict]]:
             by_entity.setdefault(l["id"], []).append(it)
     _w(out / "views" / "documents.json", allr)
     return by_entity
+
+
+def authored_works(con, ents) -> dict[str, list[dict]]:
+    """Obras de cada persona, a partir de las afirmaciones composer/librettist de las obras (el inverso, para enlazar desde su ficha)."""
+    out: dict[str, dict[str, dict]] = {}
+    for w in (e for e in ents.values() if e["type"] == "work" and not e["provisional"]):
+        bp = best_premiere(con, w["id"])
+        iv = edtf_interval(bp[0]) if bp else None
+        year = iv[0] if iv else None
+        for r in con.execute("SELECT property,value_json FROM claims WHERE subject_id=? AND property IN ('composer','librettist') AND value_type='entity' AND status!='deprecated'", (w["id"],)):
+            v = json.loads(r["value_json"])
+            if v in ents and not ents[v]["provisional"] and ents[v]["type"] == "person":
+                it = out.setdefault(v, {}).setdefault(w["id"], {"id": w["id"], "label": w["label"], "year": year, "roles": []})
+                if r["property"] not in it["roles"]:
+                    it["roles"].append(r["property"])
+    return {pid: sorted(ws.values(), key=lambda x: (x["year"] or 9999, x["label"])) for pid, ws in out.items()}
 
 
 def videos_view(con, out: Path, ents) -> None:
