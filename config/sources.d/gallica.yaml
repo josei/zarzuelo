@@ -1,0 +1,16 @@
+sources:
+  gallica:
+    validated: true
+    endpoint: https://gallica.bnf.fr/SRU
+    license: "por objeto (campo dc:rights de Gallica); metadatos descriptivos bajo licencia abierta del Estado (Licence Ouverte)"
+    reuse: consult_only   # valor por defecto; cada objeto se marca reusable solo si dc:rights trae 'domaine public'/'public domain'
+    rate_limit_per_s: 0.2  # robots.txt: Crawl-delay 5 para User-agent * (mismo host que la API SRU/IIIF)
+    queries: ['gallica adj "zarzuela"', 'gallica adj "género chico"', 'gallica adj "teatro lírico español"']
+    page_size: 50          # SRU recorta a 50 registros por petición aunque se pida más (comprobado)
+    notes: >
+      API SRU (búsqueda, Dublin Core) en /SRU e IIIF en /iiif/ark:/12148/<ark>/manifest.json. robots.txt de
+      gallica.bnf.fr veta /services/engine/search/sru (un alias distinto al que usamos) y varias rutas con
+      comodines de la web; no veta /SRU ni /iiif/. requiere un User-Agent con contacto identificable (si no,
+      devuelve 403); con él responde 200. Sin clave. Solo texto y metadatos del registro bibliográfico: la
+      página, la imagen y el audio se enlazan (IIIF/ark), nunca se descargan.
+    verified_at: "2026-10-07"

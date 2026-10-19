@@ -1,0 +1,16 @@
+# Fase 0 (verificada en vivo el 2026-10-07): bloqueada. No descarga nada; ver docstring de pipeline/kb/sources/dahr.py.
+sources:
+  dahr:
+    validated: false
+    endpoint: https://adp.library.ucsb.edu
+    license: sin licencia de reutilización explícita (uso personal, no comercial)
+    reuse: consult_only
+    rate_limit_per_s: 0
+    verified_at: "2026-10-07"
+    notes: >-
+      adp.library.ucsb.edu devuelve 403 "Request blocked" (CloudFront) a nuestro User-Agent identificable
+      (zarzuela-kb/0.1), incluso en /robots.txt; la misma petición con un User-Agent de navegador obtiene
+      200. Es un bloqueo por cadena de User-Agent, no un fallo puntual. No se esquiva suplantando un
+      navegador: la fuente queda sin validar. Tampoco se ha encontrado una API o exportación de datos
+      documentada (el plan solo apunta a "verificar si ofrece exportación"). Revisar de nuevo si UCSB abre
+      una vía de acceso automatizado identificado.

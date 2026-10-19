@@ -1,0 +1,10 @@
+# Conjunto de oro: hechos verificados a mano contra la fuente. Rellenar con pasajes REALES y su fuente.
+# Los ítems `fictional: true` solo ilustran el formato y `kb eval` los ignora.
+items:
+  - fictional: true
+    subject: La obra de ejemplo
+    passage: "«La obra de ejemplo», con música de Ana Ficticia, se estrenó en el Teatro Imaginario en 1890."
+    source: ninguna (ficticio)
+    expected:
+      - {property: composer, value: Ana Ficticia}
+      - {property: premiere_date, value: "1890"}

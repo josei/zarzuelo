@@ -1,0 +1,754 @@
+instrucciones: 'En cada candidato pon ok: true si el pasaje afirma ese hecho sobre el SUJETO, o ok: false si no. En `faltan`
+  añade {property, value} de lo que el pasaje afirma sobre el sujeto y no aparece. Borra los items que no puedas juzgar.'
+items:
+- subject: El regreso de Orestes
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=El_regreso_de_Orestes&oldid=162238018
+  passage: El libreto, basado en Las Coéforas, la segunda tragedia de la Orestíada de Esquilo, es una reducción de aquella
+    tragedia en traducción al castellano.
+  candidatos:
+  - property: based_on
+    value: Las Coéforas
+    quote: basado en Las Coéforas
+    ok: null
+  faltan: []
+- subject: Serafín Álvarez Quintero
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Hermanos_Álvarez_Quintero&oldid=170066830
+  passage: Nacidos ambos en la localidad sevillana de Utrera —Serafín el 26 de marzo de 1871 y Joaquín el 20 de enero de 1873—,
+    se instalaron en la ciudad de Sevilla, donde vivieron bastante tiempo como empleados de Hacienda, mientras colaboraban
+    en diversas publicaciones como El Diablo Cojuelo, e iniciaron paulatinamente su dedicación exclusiva al teatro.
+  candidatos:
+  - property: birth_place
+    value: Utrera
+    quote: en la localidad sevillana de Utrera
+    ok: null
+  faltan: []
+- subject: El señor Joaquín
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=El_señor_Joaquín&oldid=157392374
+  passage: Aunque en la actualidad es muy poco representada, esta zarzuela fue una de las más populares en su día, especialmente
+    su alborada, con matices de alhambrismo, el estilo romántico que recrea los aires populares andaluces. Pablo Sorozábal
+    la homenajeó mencionándola en La del manojo de rosas, cuando el protagonista, también llamado Joaquín, se nombra por vez
+    primera. Tal vez su olvido se deba al tono lánguído, aunque no trágico, de la obra, con un final triste y abrupto.
+  candidatos:
+  - property: genre
+    value: zarzuela
+    quote: esta zarzuela
+    ok: null
+  - property: denomination
+    value: alborada
+    quote: especialmente su alborada
+    ok: null
+  faltan: []
+- subject: Ernesto Lecuona
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Ernesto_Lecuona&oldid=175547225
+  passage: Tres años más tarde, murió en Santa Cruz de Tenerife (islas Canarias) durante unas vacaciones para conocer la tierra
+    natal de su padre. Sus restos descansan en el cementerio de Gate of Heaven, en Hawthorne, Nueva York.
+  candidatos:
+  - property: death_place
+    value: Santa Cruz de Tenerife (islas Canarias)
+    quote: murió en Santa Cruz de Tenerife (islas Canarias)
+    ok: null
+  faltan: []
+- subject: Maruxa
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Maruxa&oldid=165409976
+  passage: Maruxa, obra de Amadeo Vives con libreto en español de Luis Pascual Frutos. Se estrenó en Madrid, primero como
+    zarzuela (Teatro de la Zarzuela, Madrid, 28 de mayo de 1914)​ y luego como ópera (1915) en dos actos.
+  candidatos:
+  - property: composer
+    value: Amadeo Vives
+    quote: obra de Amadeo Vives
+    ok: null
+  - property: librettist
+    value: Luis Pascual Frutos
+    quote: libreto en español de Luis Pascual Frutos
+    ok: null
+  - property: premiere_date
+    value: '1914-05-28'
+    quote: 28 de mayo de 1914
+    ok: null
+  - property: premiere_venue
+    value: Teatro de la Zarzuela
+    quote: Teatro de la Zarzuela
+    ok: null
+  - property: premiere_venue
+    value: Madrid
+    quote: Madrid
+    ok: null
+  - property: premiere_venue
+    value: Teatro de la Zarzuela
+    quote: Teatro de la Zarzuela, Madrid
+    ok: null
+  - property: denomination
+    value: zarzuela
+    quote: como zarzuela
+    ok: null
+  - property: denomination
+    value: ópera
+    quote: como ópera
+    ok: null
+  - property: acts
+    value: '2'
+    quote: dos actos
+    ok: null
+  - property: revival_date
+    value: '1915'
+    quote: (1915)
+    ok: null
+  faltan: []
+- subject: Xavier Villaurrutia
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Xavier_Villaurrutia&oldid=171883232
+  passage: Muere en Ciudad de México en 1950 sin poder ver representada su producción dramática Tragedia de las equivocaciones,
+    la cual fue estrenada después de su muerte.​
+  candidatos:
+  - property: death_place
+    value: Ciudad de México
+    quote: Muere en Ciudad de México
+    ok: null
+  - property: death_date
+    value: '1950'
+    quote: en 1950
+    ok: null
+  faltan: []
+- subject: Serafín, el pinturero
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Serafín,_el_pinturero&oldid=174683653
+  passage: Serafín, el pinturero o Contra el querer no hay razones es sainete lírico en dos actos, divididos en cuatro cuadros,
+    con libreto de Carlos Arniches y Juan Gómez Renovales, con música de Luis Foglietti Alberola y Celestino Roig y estrenado
+    en 1916.
+  candidatos:
+  - property: genre
+    value: sainete lírico
+    quote: es sainete lírico
+    ok: null
+  - property: premiere_date
+    value: '1916'
+    quote: estrenado en 1916
+    ok: null
+  - property: librettist
+    value: Carlos Arniches
+    quote: con libreto de Carlos Arniches y Juan Gómez Renovales
+    ok: null
+  - property: librettist
+    value: Juan Gómez Renovales
+    quote: con libreto de Carlos Arniches y Juan Gómez Renovales
+    ok: null
+  - property: composer
+    value: Luis Foglietti Alberola
+    quote: con música de Luis Foglietti Alberola y Celestino Roig
+    ok: null
+  - property: composer
+    value: Celestino Roig
+    quote: con música de Luis Foglietti Alberola y Celestino Roig
+    ok: null
+  faltan: []
+- subject: La del Soto del Parral
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=La_del_Soto_del_Parral&oldid=170595660
+  passage: La del Soto del Parral es una zarzuela en dos actos, divididos en tres cuadros, con libreto de Luis Fernández de
+    Sevilla y Anselmo C. Carreño y música de Reveriano Soutullo y Juan Vert. Se estrenó en el Teatro de La Latina de Madrid
+    el 26 de octubre de 1927, consiguiendo un éxito tan resonante que el 15 de diciembre del mismo año se representa también
+    en el Teatro Apolo por una larga temporada.
+  candidatos:
+  - property: genre
+    value: zarzuela
+    quote: es una zarzuela
+    ok: null
+  - property: premiere_venue
+    value: Teatro de La Latina de Madrid
+    quote: en el Teatro de La Latina de Madrid
+    ok: null
+  - property: librettist
+    value: Luis Fernández de Sevilla
+    quote: con libreto de Luis Fernández de Sevilla y Anselmo C. Carreño
+    ok: null
+  - property: librettist
+    value: Anselmo C. Carreño
+    quote: con libreto de Luis Fernández de Sevilla y Anselmo C. Carreño
+    ok: null
+  - property: composer
+    value: Reveriano Soutullo
+    quote: y música de Reveriano Soutullo y Juan Vert
+    ok: null
+  - property: composer
+    value: Juan Vert
+    quote: y música de Reveriano Soutullo y Juan Vert
+    ok: null
+  faltan: []
+- subject: La emperatriz de la mentira
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=La_emperatriz_de_la_mentira&oldid=171950898
+  passage: 'Maximilien, ópera histórica en tres actos y 9 escenas; libreto de R.S. Hoffman basado en el drama Juárez und Maximilian
+    de Franz Werfel; música de Darius Milhaud. Estreno: 1932.'
+  candidatos:
+  - property: based_on
+    value: drama Juárez und Maximilian de Franz Werfel
+    quote: basado en el drama Juárez und Maximilian de Franz Werfel
+    ok: null
+  - property: composer
+    value: Darius Milhaud
+    quote: música de Darius Milhaud
+    ok: null
+  - property: librettist
+    value: R.S. Hoffman
+    quote: libreto de R.S. Hoffman
+    ok: null
+  - property: premiere_date
+    value: '1932'
+    quote: 'Estreno: 1932'
+    ok: null
+  faltan: []
+- subject: Bomarzo
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Bomarzo_(Ginastera)&oldid=174940357
+  passage: Bomarzo es una ópera en dos actos de Alberto Ginastera con base en la novela homónima de Manuel Mujica Lainez,
+    también autor del libreto. Ambas obras están basadas en la vida de Pier Francesco Orsini.
+  candidatos:
+  - property: based_on
+    value: la novela homónima de Manuel Mujica Lainez
+    quote: con base en la novela homónima de Manuel Mujica Lainez
+    ok: null
+  faltan: []
+- subject: El cóndor pasa…
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=El_cóndor_pasa…&oldid=166197039
+  passage: La única versión original de la zarzuela ha sido reconstruida y registrada en 2013 por la asociación Colectivo
+    Cultural Centenario El Cóndor Pasa. Las piezas han sido escritas para orquesta y no para instrumentos andinos. Las partes
+    más famosas como el preludio, el desfile y la cachua han sido cubiertas y adaptadas del arreglo de piano que Daniel Alomía
+    Robles vendió a Edward B. Marks Music Corp. en 1933, en Nueva York. Estos están exentos de la cuota de cualquier pago
+    de derechos de autor, debido al tiempo transcurrido. El pasacalle y la cachua han sido ampliamente grabados y difundidos,
+    y en algunos casos se han añadido letras (todas ellas deben ser consideradas apócrifas) y generalmente se han cambiado
+    sus ritmos e instrumentaciones.
+  candidatos:
+  - property: company
+    value: Colectivo Cultural Centenario El Cóndor Pasa
+    quote: por la asociación Colectivo Cultural Centenario El Cóndor Pasa
+    ok: null
+  - property: genre
+    value: zarzuela
+    quote: zarzuela
+    ok: null
+  - property: revival_date
+    value: '2013'
+    quote: en 2013
+    ok: null
+  - property: company
+    value: Colectivo Cultural Centenario El Cóndor Pasa
+    quote: Colectivo Cultural Centenario El Cóndor Pasa
+    ok: null
+  faltan: []
+- subject: Doloretes
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Doloretes&oldid=174706198
+  passage: Doloretes es una zarzuela, en un acto y tres cuadros, sobre libreto de Carlos Arniches, con música de Amadeo Vives
+    y Manuel Quislant, estrenada en el Teatro Apolo de Madrid el 28 de junio de 1901.​
+  candidatos:
+  - property: genre
+    value: zarzuela
+    quote: Doloretes es una zarzuela
+    ok: null
+  - property: librettist
+    value: Carlos Arniches
+    quote: sobre libreto de Carlos Arniches
+    ok: null
+  - property: premiere_venue
+    value: Teatro Apolo
+    quote: en el Teatro Apolo de Madrid
+    ok: null
+  - property: composer
+    value: Amadeo Vives
+    quote: con música de Amadeo Vives y Manuel Quislant
+    ok: null
+  - property: composer
+    value: Manuel Quislant
+    quote: con música de Amadeo Vives y Manuel Quislant
+    ok: null
+  faltan: []
+- subject: Las leandras
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Las_Leandras&oldid=167295814
+  passage: 'Cine: Las Leandras (1961), dirigida por Gilberto Martínez Solares. Intérpretes: Rosario Dúrcal (Concha), Enrique
+    Rambal, Andrés Soler, Francisco Jambrina, Amparo Arozamena, Yolanda Margain, Celia Viveros, Joaquín García Vargas y Alberto
+    Catalá.'
+  candidatos:
+  - property: company
+    value: Cine
+    quote: 'Cine: Las Leandras (1961)'
+    ok: null
+  - property: premiere_date
+    value: '1961'
+    quote: (1961)
+    ok: null
+  - property: performer
+    value: Rosario Dúrcal
+    quote: Rosario Dúrcal
+    ok: null
+  - property: performer
+    value: Enrique Rambal
+    quote: Enrique Rambal
+    ok: null
+  - property: performer
+    value: Andrés Soler
+    quote: Andrés Soler
+    ok: null
+  - property: performer
+    value: Francisco Jambrina
+    quote: Francisco Jambrina
+    ok: null
+  - property: performer
+    value: Amparo Arozamena
+    quote: Amparo Arozamena
+    ok: null
+  - property: performer
+    value: Yolanda Margain
+    quote: Yolanda Margain
+    ok: null
+  - property: performer
+    value: Celia Viveros
+    quote: Celia Viveros
+    ok: null
+  - property: performer
+    value: Joaquín García Vargas
+    quote: Joaquín García Vargas
+    ok: null
+  - property: performer
+    value: Alberto Catalá
+    quote: Alberto Catalá
+    ok: null
+  faltan: []
+- subject: José F. Vásquez
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=José_F._Vásquez&oldid=162639394
+  passage: José F. Vásquez nació el 4 de octubre de 1896 en la ciudad de Arandas, estado de Jalisco, México. Se distinguió
+    a temprana edad como pianista y ganó el concurso nacional de 1910. El premio le fue concedido por el presidente Porfirio
+    Díaz. En el Conservatorio Nacional de Música, José F. Vásquez estudió composición con Julián Carrillo y Rafael J. Tello,
+    con César Del Castillo piano, y con Horacio Ávila el violonchelo.
+  candidatos:
+  - property: birth_date
+    value: '1896-10-04'
+    quote: nació el 4 de octubre de 1896
+    ok: null
+  faltan: []
+- subject: Margot
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Margot_(ópera)&oldid=173166881
+  passage: Margot es una ópera compuesta por Joaquín Turina con libreto de María de la O Lejárraga.​​ Interpretada por primera
+    vez en 1914, lleva el subtítulo «comedia lírica en tres actos», los cuales fueron reducidos a dos en versiones posteriores.​
+  candidatos:
+  - property: composer
+    value: Joaquín Turina
+    quote: compuesta por Joaquín Turina
+    ok: null
+  - property: librettist
+    value: María de la O Lejárraga
+    quote: con libreto de María de la O Lejárraga
+    ok: null
+  - property: premiere_date
+    value: '1914'
+    quote: Interpretada por primera vez en 1914
+    ok: null
+  - property: genre
+    value: comedia lírica en tres actos
+    quote: «comedia lírica en tres actos»
+    ok: null
+  faltan: []
+- subject: Miguel de Palacios
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Miguel_de_Palacios&oldid=174688595
+  passage: Miguel de Palacios Brugueras (Manila, 18 de enero de 1858-Gijón, 4 de octubre de 1920) fue un dramaturgo español,
+    activo a finales del siglo XIX y las dos primeras décadas del XX.
+  candidatos:
+  - property: birth_place
+    value: Manila
+    quote: Manila
+    ok: null
+  - property: death_place
+    value: Gijón
+    quote: Gijón
+    ok: null
+  - property: birth_date
+    value: '1858-01-18'
+    quote: 18 de enero de 1858
+    ok: null
+  - property: death_date
+    value: '1920-10-04'
+    quote: 4 de octubre de 1920
+    ok: null
+  faltan: []
+- subject: María la O
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=María_la_O&oldid=173791854
+  passage: María la O es una zarzuela o sainete lírico estructurado en un único acto, cuya música fue compuesta por Ernesto
+    Lecuona. El libreto es obra de Gustavo Sánchez Galarraga. Se estrenó el 1 de marzo de 1930 en el Teatro Payret de La Habana.
+  candidatos:
+  - property: composer
+    value: Ernesto Lecuona
+    quote: compuesta por Ernesto Lecuona
+    ok: null
+  - property: denomination
+    value: zarzuela o sainete lírico
+    quote: una zarzuela o sainete lírico
+    ok: null
+  - property: librettist
+    value: Gustavo Sánchez Galarraga
+    quote: obra de Gustavo Sánchez Galarraga
+    ok: null
+  - property: premiere_date
+    value: '1930-03-01'
+    quote: 1 de marzo de 1930
+    ok: null
+  - property: premiere_venue
+    value: Teatro Payret de La Habana
+    quote: en el Teatro Payret de La Habana
+    ok: null
+  faltan: []
+- subject: La Cenicienta (Peña Hen)
+  type: other
+  source: https://es.wikipedia.org/w/index.php?title=La_Cenicienta_(Peña_Hen)&oldid=164272497
+  passage: 1967 Estreno en Teatro del Liceo de Niñas de La Serena (Hoy teatro Municipal), bajo la batuta de su creador y director
+    el maestro Jorge Peña Hen y la Orquesta Sinfónica Infantil "Pedro Humberto Allende", pionera en Chile y América Latina.
+    Luego se presentó en Teatro Municipal de Santiago, Viña, Concepción y principales escenarios del país.
+  candidatos:
+  - property: opening_date
+    value: '1967'
+    quote: 1967 Estreno
+    ok: null
+  - property: premiere_venue
+    value: Teatro del Liceo de Niñas de La Serena
+    quote: Teatro del Liceo de Niñas de La Serena
+    ok: null
+  faltan: []
+- subject: Música clásica
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Música_clásica_(zarzuela)&oldid=157530653
+  passage: Música clásica es una zarzuela en un acto (género chico), con música de Ruperto Chapí y libreto de José Estremera.
+    Se estrenó el 20 de septiembre de 1880 con gran éxito en el Teatro de la Comedia de Madrid.
+  candidatos:
+  - property: genre
+    value: género chico
+    quote: una zarzuela en un acto (género chico)
+    ok: null
+  - property: composer
+    value: Ruperto Chapí
+    quote: con música de Ruperto Chapí
+    ok: null
+  - property: librettist
+    value: José Estremera
+    quote: y libreto de José Estremera
+    ok: null
+  - property: premiere_date
+    value: '1880-09-20'
+    quote: el 20 de septiembre de 1880
+    ok: null
+  - property: premiere_venue
+    value: Teatro de la Comedia de Madrid
+    quote: en el Teatro de la Comedia de Madrid
+    ok: null
+  faltan: []
+- subject: Carlos Fernández Shaw
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Carlos_Fernández_Shaw&oldid=173470922
+  passage: Recopiló sus cuentos en La pícara Olalla, Madrid, sin año, aunque póstuma según el prólogo de su hijo Guillermo;
+    esta obra incluye asimismo su famoso Poema de caracol. Es interesante su discurso Relaciones entre la ciencia y la poesía,
+    leído en 1884 en el Ateneo de Madrid.​
+  candidatos: []
+  faltan: []
+- subject: La boda de Luis Alonso
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=La_boda_de_Luis_Alonso&oldid=171065989
+  passage: La boda de Luis Alonso o La noche del encierro es un sainete lírico (zarzuela) en un acto, dividido en tres cuadros,
+    en verso, con música de Gerónimo Giménez y libreto de Javier de Burgos y Larragoiti. Se estrenó en el Teatro de la Zarzuela
+    de Madrid, el 27 de enero de 1897. Su intermedio instrumental es probablemente el más popular de la zarzuela.​ En la partitura,
+    Giménez cita el aria de Angèle, del tercer acto de El dominó negro (1837), de Daniel Auber.
+  candidatos:
+  - property: genre
+    value: sainete lírico (zarzuela)
+    quote: es un sainete lírico (zarzuela)
+    ok: null
+  - property: librettist
+    value: Javier de Burgos y Larragoiti
+    quote: libreto de Javier de Burgos y Larragoiti
+    ok: null
+  - property: composer
+    value: Gerónimo Giménez
+    quote: con música de Gerónimo Giménez
+    ok: null
+  - property: premiere_date
+    value: '1897-01-27'
+    quote: el 27 de enero de 1897
+    ok: null
+  faltan: []
+- subject: María de la O Lejárraga
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=María_de_la_O_Lejárraga&oldid=173349276
+  passage: María de la O Lejárraga García (San Millán de la Cogolla, La Rioja, 28 de diciembre de 1874-Buenos Aires, 28 de
+    junio de 1974) fue una escritora y feminista española. También conocida como María Martínez Sierra, seudónimo que adoptó
+    a partir de los apellidos de su marido, Gregorio Martínez Sierra, y bajo cuyo nombre escribió gran parte de su obra. Parte
+    importante de sus escritos se firman como María Lejárraga. Diputada al Congreso por el PSOE por la circunscripción de
+    Granada en 1933.​
+  candidatos:
+  - property: birth_place
+    value: San Millán de la Cogolla
+    quote: San Millán de la Cogolla, La Rioja
+    ok: null
+  - property: death_place
+    value: Buenos Aires
+    quote: Buenos Aires
+    ok: null
+  - property: birth_date
+    value: '1874-12-28'
+    quote: 28 de diciembre de 1874
+    ok: null
+  - property: death_date
+    value: '1974-06-28'
+    quote: 28 de junio de 1974
+    ok: null
+  faltan: []
+- subject: El Rajah
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=El_Rajah&oldid=165178046
+  passage: Vásquez y yo no hemos creído mucho en los concursos, cuyo resultado está previsto o prefijado casi siempre. Nos
+    animó, empero, la circunstancia de que, si no salíamos premiados, nuestra labor no sería estéril, pues llevaríamos la
+    obra a la escena con elementos de la escuela. Alentados con esa perspectiva, escribimos la ópera Citlali -yo el verso
+    y Vásquez la música- obteniendo el premio por unanimidad y representándose la obra, primero en el Teatro Iris, y después
+    en El Toreo, durante la inolvidable temporada del tenor español, Miguel Fleta. Alentados por nuestro éxito escribimos
+    y estrenamos después en diversas épocas, las óperas, El Mandarín, El Rajáh y El último sueño, el ballet azteca La Ofrenda;
+    un poema sinfónico para orquesta y voces, y numerosos lieder...​
+  candidatos:
+  - property: based_on
+    value: El Rajah
+    quote: estrenamos después en diversas épocas, las óperas, El Mandarín, El Rajáh y El último sueño
+    ok: null
+  - property: composer
+    value: José F. Vásquez
+    quote: Vásquez la música
+    ok: null
+  - property: premiere_venue
+    value: Teatro Iris
+    quote: representándose la obra, primero en el Teatro Iris
+    ok: null
+  faltan: []
+- subject: Julián Romea Parra
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Julián_Romea_Parra&oldid=146774870
+  passage: Nació en Zaragoza en 1848. Siendo hijo de los actores Mariano Romea Yanguas y Trinidad Parra Navarro. Además de
+    su faceta de actor, destacó como comediógrafo de zarzuela y sainetes. Se formó con su tía Matilde Díez, realizando giras
+    por América y España. Como libretista, pueden citarse La hija del Barba (1894), El padrino de el nene o todo por el arte
+    (1896), El señor Joaquín (1898) y La tempranica (1900), estrenada en el Teatro de la Zarzuela de Madrid. En su faceta
+    de compositor son reseñables la ya mencionada La hija del Barba, Niña Pancha (1886) y La segunda tiple (1890), estas dos
+    últimas con partitura escrita en colaboración con Joaquín Valverde Durán.​
+  candidatos:
+  - property: birth_date
+    value: '1848'
+    quote: Nació en Zaragoza en 1848
+    ok: null
+  - property: birth_place
+    value: Zaragoza
+    quote: Nació en Zaragoza
+    ok: null
+  faltan: []
+- subject: Los amores de la Inés
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Los_amores_de_la_Inés&oldid=157482515
+  passage: 'Los ocho personajes y el coro que aparecen en la obra son: Inés, Felipa, La Blasa, Juan, Señor Lucas, Fatigas,
+    Moreno, Rata Sabia, Araña, Pesqui y Mozo.​ Tras su estreno el 12 de abril de 1902 en el Teatro Cómico de Madrid se realizaron
+    veinte actuaciones, a cargo de la compañía de Loreto Prado y Enrique Chicote.​​'
+  candidatos:
+  - property: premiere_date
+    value: '1902-04-12'
+    quote: el 12 de abril de 1902
+    ok: null
+  - property: premiere_venue
+    value: Teatro de Capellanes
+    quote: en el Teatro Cómico de Madrid
+    ok: null
+  faltan: []
+- subject: Mirentxu
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Mirentxu&oldid=173535773
+  passage: '"Sin duda, un reencuentro de altura con esta Mirentxu, muy bien acogido por el público que -dado su carácter de
+    versión de concierto- hubo de contar con la inestimable figura de un narrador como Carlos Hipólito que obró a una gran
+    altura con su magia narrativa llena de matices y de rico y atractivo enganche prosódico. La música, de una calidad y belleza
+    incontestables,prodigio de orquestación, puede absolutamente con un libreto más bien endeblebasado en el típico triángulo
+    amoroso, que al final acaba en tragedia -al contrario que cualquier otro argumento zarzuelístico-, si bien dulcificada
+    por el perdón de Mirentxu hacia su amor perdido".​'
+  candidatos:
+  - property: based_on
+    value: triángulo amoroso
+    quote: basado en el típico triángulo amoroso
+    ok: null
+  - property: genre
+    value: zarzuelístico
+    quote: cualquier otro argumento zarzuelístico
+    ok: null
+  faltan: []
+- subject: Manuel López-Quiroga Miquel
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Manuel_López-Quiroga_Miquel&oldid=174615686
+  passage: Manuel López-Quiroga Miquel (Sevilla, 30 de enero de 1899-Madrid, 13 de diciembre de 1988), conocido como el maestro
+    Quiroga, fue un pianista, compositor y autor de cuplé y copla, además de uno de los componentes del trío de autores Quintero,
+    León y Quiroga. Padre del también músico Manuel López-Quiroga Clavero.
+  candidatos:
+  - property: birth_place
+    value: Sevilla
+    quote: Sevilla
+    ok: null
+  - property: death_place
+    value: Madrid
+    quote: Madrid
+    ok: null
+  faltan: []
+- subject: Manuela y Simón
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Manuela_y_Bolívar&oldid=174392791
+  passage: Manuela y Bolívar es una ópera con libreto y música del compositor ecuatoriano Diego Luzuriaga. La obra relata
+    la relación amorosa entre Manuela Sáenz y Simón Bolívar. Se estrenó el 13 de noviembre de 2006 en el Teatro Nacional Sucre
+    en Quito, como creación artística de la Compañía Lírica Nacional con el acompañamiento de la Orquesta Sinfónica Nacional
+    de Ecuador.
+  candidatos:
+  - property: based_on
+    value: Manuela Sáenz y Simón Bolívar
+    quote: La obra relata la relación amorosa entre Manuela Sáenz y Simón Bolívar
+    ok: null
+  - property: composer
+    value: Diego Luzuriaga
+    quote: del compositor ecuatoriano Diego Luzuriaga
+    ok: null
+  - property: premiere_venue
+    value: Teatro Nacional Sucre
+    quote: en el Teatro Nacional Sucre
+    ok: null
+  - property: company
+    value: Compañía Lírica Nacional
+    quote: como creación artística de la Compañía Lírica Nacional
+    ok: null
+  faltan: []
+- subject: Salsipuedes o el amor, la guerra y unas anchoas
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=Salsipuedes_o_el_amor,_la_guerra_y_unas_anchoas&oldid=175330743
+  passage: Salsipuedes o el amor, la guerra y unas anchoas es una ópera en tres actos del compositor mexicano Daniel Catán
+    con un libreto en español del escritor cubano Eliseo Alberto, con colaboración del escritor mexicano Francisco Hinojosa
+    y el propio Daniel Catán. La ópera fue comisionada por The Houston Grand Opera y presentada por primera vez el 29 de octubre
+    de 2004.​
+  candidatos:
+  - property: composer
+    value: Daniel Catán
+    quote: del compositor mexicano Daniel Catán
+    ok: null
+  - property: librettist
+    value: Eliseo Alberto
+    quote: del escritor cubano Eliseo Alberto
+    ok: null
+  - property: librettist
+    value: Francisco Hinojosa
+    quote: con colaboración del escritor mexicano Francisco Hinojosa
+    ok: null
+  - property: librettist
+    value: Daniel Catán
+    quote: y el propio Daniel Catán
+    ok: null
+  - property: company
+    value: The Houston Grand Opera
+    quote: comisionada por The Houston Grand Opera
+    ok: null
+  - property: premiere_date
+    value: '2004-10-29'
+    quote: el 29 de octubre de 2004
+    ok: null
+  faltan: []
+- subject: El huésped del sevillano
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=El_huésped_del_sevillano&oldid=174132092
+  passage: El huésped del Sevillano es una historia llena de intrigas. El título hace alusión a que un personaje que aparece,
+    el huésped del mesón El Sevillano en Toledo, es el escritor Miguel de Cervantes.​​
+  candidatos:
+  - property: based_on
+    value: El Sevillano
+    quote: el huésped del mesón El Sevillano
+    ok: null
+  faltan: []
+- subject: Pablo Luna
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Pablo_Luna&oldid=173135765
+  passage: 1930 La playa de Ola-Ola, vodevil lírico en 1 acto (junto con Rafael Calleja Gómez)-libreto de José Juan Cadenas
+    y Emilio González del Castillo.
+  candidatos: []
+  faltan: []
+- subject: Rafael Martínez Valls
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Rafael_Martínez_Valls&oldid=172235307
+  passage: En 1917 se trasladó a Barcelona, donde ocupó el puesto de maestro de capilla y organista de la iglesia de San José
+    Oriol durante los primeros siete años de estancia en Barcelona. Más tarde estrenó su primera obra teatral titulada "La
+    Mosquetera" en el Teatro Tívoli consiguiendo un gran éxito. También dirigió la sala «Aeolian» del paseo de Gracia.​
+  candidatos: []
+  faltan: []
+- subject: Nan de Allariz
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Alfredo_Nan_de_Allariz&oldid=171151829
+  passage: 'Vilavedra, Dolores, ed. (1995). Diccionario da literatura galega. Autores I. Vigo: Editorial Galaxia. p. 206.
+    ISBN 84-8288-019-5.'
+  candidatos: []
+  faltan: []
+- subject: La verbena de la Paloma
+  type: work
+  source: https://es.wikipedia.org/w/index.php?title=La_verbena_de_la_Paloma&oldid=175186933
+  passage: Talens Jenaro; Zunzunegui Díez, Santos (1998). Modes of Representation in Spanish Cinema. U of Minnesota Press.
+    ISBN 0816629757.
+  candidatos: []
+  faltan: []
+- subject: Xavier Montsalvatge
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Xavier_Montsalvatge&oldid=174872850
+  passage: También colaboró con el cine, siendo el autor de la ambientación musical de varias películas. Fue nominado al Premio
+    Goya a la mejor música original por la película Dragon Rapide (1986).
+  candidatos: []
+  faltan: []
+- subject: Manuel de Sumaya
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Manuel_de_Sumaya&oldid=174936945
+  passage: '______ "La Música en México de los siglos XVI a XVIII," en La Música de México, ed. Julio Estrada, 1. Historia,
+    2. Periodo Virreinal (1530 a 1810) (México: UNAM, 1986), pp. 7-74, esp. pp. 55, 66-67;'
+  candidatos: []
+  faltan: []
+- subject: Pío Baroja
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Pío_Baroja&oldid=175632520
+  passage: 'En 1900 publicó su primer libro, una recopilación de cuentos titulada Vidas sombrías,​ la mayoría compuestos en
+    Cestona sobre gentes de esa región y sus propias experiencias como médico. En esta obra se encuentran en germen todas
+    las obsesiones que reflejó en su novelística posterior. El libro fue muy leído y comentado por prestigiosos escritores
+    como Miguel de Unamuno, quien se entusiasmó con él y quiso conocer al autor; por su amigo Azorín también y por Benito
+    Pérez Galdós. Siempre negó la existencia de la «Generación del 98» por considerar que carecían sus pretendidos componentes
+    de las necesarias afinidades y similitudes. En ese mismo año publica la que será su primera novela: La casa de Aizgorri,
+    iniciando así su carrera como escritor y ensayista.​'
+  candidatos: []
+  faltan: []
+- subject: María de la O Lejárraga
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=María_de_la_O_Lejárraga&oldid=173349276
+  passage: Varias de estas obras tiene como eje un triángulo amoroso. Así Mujer (1925), La hora del diablo (1926) Triángulo
+    (1929) y Sortilegio (1930) texto inédito que nunca se estrenó en España. Esta última es la única tragedia de la autora.
+    Sorprende porque el triángulo está compuesto por un hombre y una mujer que compiten por el amor de otro hombre. Trata
+    además del suicidio. Fue la última obra de María estrenada y firmada por Gregorio. En 1931 este se estableció en Hollywood
+    con Catalina Bárcena y Lejárraga volvió a España (desde la Riviera francesa) donde colaboró activamente con la República
+    y abandonó su producción dramática hasta el exilio.​
+  candidatos: []
+  faltan: []
+- subject: Víctor Balaguer
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Víctor_Balaguer&oldid=172204526
+  passage: 'Colaboró asimismo en la ambiciosa Historia general de España escrita por individuos de número de la Real Academia
+    de la Historia; bajo la dirección del Sr. Antonio Cánovas del Castillo Madrid: El Progreso Editorial, 1890-1894, 18 vols,
+    en donde se responsabilizó de los volúmenes VII y VIII dedicados a los Reyes Católicos.'
+  candidatos: []
+  faltan: []
+- subject: Pedro Calderón de la Barca
+  type: person
+  source: https://es.wikipedia.org/w/index.php?title=Pedro_Calderón_de_la_Barca&oldid=175690373
+  passage: Cuarta parte de Comedias de Don Pedro Calderón de la Barca, Madrid, por Bernardo de Hervada, a costa de Antonio
+    de la Fuente, 1674
+  candidatos: []
+  faltan: []

@@ -1,0 +1,19 @@
+sources:
+  internet_archive:
+    validated: true
+    endpoint: https://archive.org
+    license: per-item
+    reuse: consult_only
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      API de búsqueda (advancedsearch.php) y de metadatos (/metadata/<id>); sin clave. robots.txt solo veta
+      /control/ y /report/, no las rutas de API usadas. Colección `texts` (libretos, prensa digitalizada): se
+      descarga el OCR en texto plano (fichero derivado *_djvu.txt, decenas-cientos de KB) como contenido del
+      documento -- es texto, no medio; los escaneos/PDF originales solo se referencian (nombre, formato, tamaño,
+      URL /download/<id>/<fichero>) y nunca se descargan (en muestra real, hasta ~175 MB por ítem de escaneos TIFF).
+      Colección `georgeblood` (Great 78 Project, discos de 78 rpm de zarzuela): solo metadatos; el audio nunca se
+      descarga, solo se referencia. El estado de derechos de estas grabaciones está en litigio (demanda de las
+      discográficas a Internet Archive, 2023): no se asume dominio público por estar en la colección. Licencia por
+      ítem (licenseurl/rights de la metadata); sin declaración explícita se trata como consult_only. Enlace
+      conservador a obras del corpus por título + compositor/intérprete citado.

@@ -1,0 +1,22 @@
+# Fase 0 verificada a mano el 2026-10-07: Identify/ListSets/ListRecords reales en /oai/oai.do (no enlazado
+# desde la web; encontrado probando rutas típicas de OAI-PMH). Sin robots.txt (404): sin restricciones.
+sources:
+  bvph:
+    validated: true
+    endpoint: https://prensahistorica.mcu.es/oai/oai.do
+    license: "por registro (dc:rights); mayoría CC BY 4.0 según aviso legal"
+    reuse: consult_only   # valor por defecto; cada registro se marca reusable solo con derechos abiertos (dc:rights)
+    rate_limit_per_s: 1   # sin política publicada: se usa el límite conservador habitual del proyecto
+    verified_at: "2026-10-07"
+    notes: >-
+      Biblioteca Virtual de Prensa Histórica (Ministerio de Cultura). OAI-PMH 2.0 en /oai/oai.do (verbs
+      Identify/ListMetadataFormats/ListSets/ListRecords probados con curl; formatos disponibles: didl,
+      oai_marc, oai_dc, ese, marc21, edm). Sin robots.txt (404 con página de error propia de la web, no
+      restricción OAI): se interpreta como sin restricciones declaradas. Aviso legal
+      (https://prensahistorica.mcu.es/es/contenido/aviso-legal.do): la mayoría de obras se ofrece en CC BY 4.0;
+      el resto declara su licencia caso por caso en el registro (dc:rights). Los registros OAI son a nivel de
+      cabecera/número de prensa (catálogo), no de artículo individual: no hay texto OCR en el XML, solo
+      metadatos + enlace a la ficha de consulta. Solo se ingieren 9 ListSets reales (prensahistorica1-5,
+      prensa_revistas, culturales_articulos, americanae, filipinas); se excluyen los 2 sets de prueba del
+      propio repositorio (prueba_recoleccion, Pueba_1registro). Medios (imágenes de página) solo por
+      referencia.

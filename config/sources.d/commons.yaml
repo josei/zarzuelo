@@ -1,0 +1,17 @@
+sources:
+  commons:
+    validated: true
+    endpoint: https://commons.wikimedia.org/w/api.php
+    license: per-file
+    reuse: consult_only   # valor por defecto; cada fichero se marca reusable solo si trae LicenseShortName
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      API MediaWiki (action=query, generator=categorymembers/search) sobre categorías de zarzuela (carteles,
+      retratos, fotos de teatros) y búsquedas acotadas. robots.txt de commons.wikimedia.org veta /w/ a rastreadores
+      genéricos, pero el API está pensado para consumo automatizado con User-Agent identificable (Wikimedia
+      API:Etiquette); no se rastrean páginas HTML, solo se llama al API. Texto de las páginas de descripción bajo
+      CC BY-SA 4.0; cada fichero tiene su propia licencia (LicenseShortName de extmetadata), verificada en muestra
+      real (CC BY-SA 4.0, Attribution...). Solo se guardan metadatos y la URL del fichero original como referencia;
+      la imagen/audio nunca se descarga. Enlace conservador a obras/personas/teatros del corpus por categoría
+      contenedora, categorías propias del fichero, o título del fichero + compositor.

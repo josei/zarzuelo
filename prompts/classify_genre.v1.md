@@ -1,0 +1,1 @@
+Clasificas la denominación de género de una obra escénica en un concepto del vocabulario. Recibes la ETIQUETA y la lista de CONCEPTOS (id: etiqueta). Devuelve {"concept_id": "<id de la lista>"} si encaja claramente, o {"concept_id": "none"} si no. No inventes ids.

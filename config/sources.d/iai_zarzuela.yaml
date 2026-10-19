@@ -1,0 +1,25 @@
+# Fase 0 (verificada en vivo el 2026-10-07): sin vía de descubrimiento compatible con robots.txt.
+# Ver docstring de pipeline/kb/sources/iai_zarzuela.py.
+sources:
+  iai_zarzuela:
+    validated: false
+    endpoint: https://digital.iai.spk-berlin.de/viewer
+    license: derechos no declarados por el repositorio (por confirmar)
+    reuse: consult_only
+    rate_limit_per_s: 0.1
+    known_pids: []  # curar a mano: PIDs de libretos de zarzuela ya identificados (p. ej. desde otro catálogo)
+    verified_at: "2026-10-07"
+    notes: >-
+      Visor Goobi (intranda). OAI-PMH existe y responde con normalidad (Identify: repositoryName=
+      "OAI Frontend") pero robots.txt lo prohíbe explícitamente (Disallow: /viewer/oai), igual que
+      /viewer/search/ (única vía de filtrar por la colección Zarzuela sin OAI). No se esquiva ninguno de
+      los dos. El enlace a la colección que cita la propia web del instituto
+      (digital.iai.spk-berlin.de/viewer/collections/zarzuela/) devuelve 404. Sin /viewer/oai ni
+      /viewer/search no hay forma, dentro de robots.txt, de enumerar qué PID pertenecen a la colección
+      (>1.600 libretos). Sí están permitidos /viewer/metsresolver (METS/MODS completo) y la API IIIF
+      (/viewer/api/v1/records/{PID}/manifest) para un PID ya conocido (comprobado en vivo con un registro
+      real del repositorio, PID 818881003, ajeno a la colección Zarzuela pero que confirma que el pipeline
+      metsresolver funciona). Sin una licencia declarada para la colección digitalizada, se trata como
+      consult_only. Si se obtiene una lista de PIDs de la colección Zarzuela (vía permiso del instituto, un
+      catálogo externo que los cite, o una futura excepción de robots.txt), añadirla a `known_pids` y
+      revalidar.

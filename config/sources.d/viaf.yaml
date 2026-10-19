@@ -1,0 +1,13 @@
+sources:
+  viaf:
+    validated: false
+    endpoint: https://viaf.org/viaf
+    license: ODC-BY-1.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    size_bytes: null
+    verified_at: "2026-10-07"
+    notes: >-
+      API (AutoSuggest, sourceID/BNE|id/viaf.json, <id>/viaf.json). viaf.org responde 403 con reto de Cloudflare
+      (también robots.txt) a clientes automáticos: no se pudo contrastar términos ni muestra. Licencia ODC-BY 1.0
+      según documentación pública de OCLC (sin verificar). Alternativa operativa: IDs VIAF vía Wikidata P214.

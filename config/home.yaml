@@ -1,0 +1,15 @@
+# Portada: títulos por épocas. Las épocas siguen la narrativa histórica del artículo «Zarzuela» de es.wikipedia (revisión archivada
+# 173361795): orígenes barrocos y siglo XVIII italianizante; auge del XIX «a partir de 1839»; género chico tras la Revolución de 1868
+# (Teatro Variedades, funciones «por horas»); siglo XX; ruptura de la Guerra Civil. Es UNA periodización entre varias (muchos autores
+# sitúan el renacer de la zarzuela grande en 1851, con «Jugar con fuego»); los años de corte son aproximados y se pueden cambiar aquí.
+# Criterio de selección en cada época: las obras con más datos documentados, en orden cronológico.
+source:
+  label: "Wikipedia ES, «Zarzuela», rev. 173361795"
+  url: "https://es.wikipedia.org/w/index.php?title=Zarzuela&oldid=173361795"
+per_era: 10
+eras:
+  - {id: 1, title: "Orígenes y siglo XVIII",        subtitle: "De Lope y Calderón al estilo italiano",   from: 1600, to: 1838}
+  - {id: 2, title: "El auge de la zarzuela grande", subtitle: "Desde 1839",                              from: 1839, to: 1867}
+  - {id: 3, title: "El género chico",               subtitle: "Desde 1868: el teatro por horas",         from: 1868, to: 1899}
+  - {id: 4, title: "La zarzuela del siglo XX",      subtitle: "1900–1935",                               from: 1900, to: 1935}
+  - {id: 5, title: "Guerra Civil y posguerra",      subtitle: "Desde 1936",                              from: 1936, to: 1960}

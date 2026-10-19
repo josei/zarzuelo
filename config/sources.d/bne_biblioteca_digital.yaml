@@ -1,0 +1,17 @@
+sources:
+  bne_biblioteca_digital:
+    validated: false
+    endpoint: https://www.bne.es/media/datosgob/bdh/dominiopublico/dominiopublico_csv-utf8.zip
+    license: CC-BY-4.0
+    reuse: reusable
+    rate_limit_per_s: 0.5
+    size_bytes: null
+    verified_at: "2026-10-07"
+    notes: >-
+      índice de la Biblioteca Digital en dominio público (solo metadatos y URL; sin escaneos). Descubierto vía datos.gob.es (licencia CC BY 4.0) y CKAN datosabiertos.bne.es (indica CC0; se aplica la
+      más restrictiva). www.bne.es/media/datosgob/ responde 403 con reto de Cloudflare a clientes automáticos
+      (HEAD y GET, robots.txt sí accesible): no se pudo medir tamaño ni bajar muestra, por eso validated=false.
+      Pasar a true cuando la BNE habilite el acceso o se baje el fichero a mano a data/bne/bne_biblioteca_digital/. Texto y metadatos se
+      descargan; los medios solo se enlazan.
+
+# Sustituido por bne_local (descarga manual, 2026-10-07).

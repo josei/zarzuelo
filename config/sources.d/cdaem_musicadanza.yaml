@@ -1,0 +1,24 @@
+# Fase 0 (solo consulta, sin rastreo). Verificado a mano el 2026-10-07; 3 muestras.
+sources:
+  cdaem_musicadanza:
+    validated: false
+    reuse: consult_only
+    endpoint: https://www.musicadanza.es/es/fondos-documentales/colecciones/programas-de-mano
+    url_patron:
+      inventario: "https://www.musicadanza.es/es/fondos-documentales/colecciones/programas-de-mano/{slug}"
+      ejemplo_zarzuela: https://www.musicadanza.es/es/fondos-documentales/colecciones/programas-de-mano/teatro-de-la-zarzuela-inventario-de-programas-1958-2023
+      ejemplo_real: https://www.musicadanza.es/es/fondos-documentales/colecciones/programas-de-mano/teatro-real-sala-de-conciertos-inventario-de-programas-1917-1988
+    license: sin licencia de reutilización explícita
+    rate_limit_per_s: 0
+    verified_at: "2026-10-07"
+    notes: >-
+      Descargable: la URL del inventario de Teatro de la Zarzuela sirve directamente un PDF
+      de 11 páginas (application/pdf, ~1 MB; ficha ISAD-G + lista de programas por caja y
+      signatura TLNZ-xxx/yy). Es un inventario de temporadas/ciclos (año, título, signatura),
+      NO tiene repartos ni obras. La ficha ISAD-G dice "Condiciones de acceso: Acceso libre" y
+      "Condiciones de reproducción: No permitida" (referido a los programas físicos). El aviso
+      legal (Secretaría de Estado de Cultura) no contiene licencia de reutilización. robots.txt:
+      Disallow /portada/ y /ficheros/. Fondos solo "en modo de consulta presencial". Valor bajo
+      para la base: sirve como pista de qué ciclos/temporadas hubo, no como evidencia de
+      producciones. Recomendación: solo enlazar/citar; pedir permiso si se quiere usar el
+      inventario como dato (docs/permisos/cdaem_musicadanza.md).

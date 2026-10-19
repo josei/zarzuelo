@@ -1,0 +1,16 @@
+sources:
+  imslp:
+    validated: true
+    endpoint: https://imslp.org/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 0.5
+    verified_at: "2026-10-07"
+    notes: >-
+      API MediaWiki antigua (IMSLP:OldAPI), categoría Category:Zarzuelas. robots.txt permite /api.php y declara
+      Crawl-delay 2 (respetado con rate_limit_per_s=0.5). Texto wiki de cada página de obra bajo CC BY-SA 4.0
+      (IMSLP:Copyright_Policy); cada partitura (fichero) declara su propio estado de copyright en la plantilla
+      (ej. Public Domain) -- los PDF/imágenes de partitura NO se descargan, solo se registran nombre, editor y
+      copyright por fichero junto a la URL de la página de la obra. Enlace conservador a obras del corpus por
+      compositor (sufijo del título de página) + título normalizado; compositor y libretista solo se enlazan como
+      afirmación si ya existen como persona en el corpus con ese nombre exacto.

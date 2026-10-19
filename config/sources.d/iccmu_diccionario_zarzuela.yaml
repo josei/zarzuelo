@@ -1,0 +1,26 @@
+# Fase 0 (solo consulta, sin rastreo). Verificado a mano el 2026-10-07; 5 páginas de muestra.
+sources:
+  iccmu_diccionario_zarzuela:
+    validated: false
+    reuse: consult_only
+    endpoint: https://www.diccionariodelazarzuela.es/dz
+    url_patron:
+      portada: https://www.diccionariodelazarzuela.es/dz
+      indice: "https://www.diccionariodelazarzuela.es/dz/indice?l={letra}&p={pagina}"
+      buscador: https://www.diccionariodelazarzuela.es/dz/buscador-voces
+      # El patrón del enlace permanente de cada voz NO se ha podido confirmar sin rastrear
+      # (el índice y el buscador cargan los listados dinámicamente: formulario a /dz/voces,
+      # acción /SearchVoices/BuildURL). Confirmarlo con el ICCMU antes de citar voces.
+      voz: null
+    license: sin licencia de reutilización explícita
+    rate_limit_per_s: 0
+    verified_at: "2026-10-07"
+    notes: >-
+      Aviso legal (ICCMU): uso, "reproducción, distribución, comunicación pública, transformación
+      o cualquier otra actividad similar o análoga, queda totalmente prohibida salvo que medie
+      expresa autorización por escrito"; los contenidos solo se usan "en el ámbito de una relación
+      contractual" con la empresa. Los enlaces a la web exigen autorización expresa y escrita
+      y pueden revocarse. No hay robots.txt (404). Sitio con registro/inicio de sesión.
+      Recomendación: solo enlazar/citar (referencia con URL y fecha de consulta, sin texto) y
+      pedir permiso por escrito (borrador en docs/permisos/iccmu_diccionario_zarzuela.md),
+      incluida la autorización para enlazar. Sin permiso no se rastrea ni se ingiere.

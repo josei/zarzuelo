@@ -1,0 +1,20 @@
+# Motor por tarea (plan §8.4). Las URL/umbrales son configuración, no datos.
+local:
+  base_url: http://localhost:11434/v1
+  model: bartowski/Qwen_Qwen3.5-4B-GGUF:Q5_K_M
+  slots: 1
+claude:
+  daily_call_cap: 40   # topes bajos a propósito: la cuota de Claude se reserva para el uso interactivo del responsable
+  max_concurrency: 1
+tasks:
+  relevance_filter:   {engine: local}
+  extract_claims:     {engine: local, escalate_to: claude, escalate_model: claude-haiku-5-5, min_coverage: 0.8}
+  extract_claims_batch: {engine: claude, model: claude-haiku-5-5}
+  extract_narratives_batch: {engine: claude, model: claude-haiku-5-5}
+  extract_narratives: {engine: claude, model: sonnet}
+  classify_genre:     {engine: local, escalate_to: claude, escalate_model: claude-haiku-5-5}
+  resolve_entities:   {engine: claude, model: sonnet}
+  summarize:          {engine: local}
+  check_support:      {engine: local}
+  judge:              {engine: claude, model: claude-haiku-5-5}
+  judge_batch:        {engine: claude, model: claude-haiku-5-5}

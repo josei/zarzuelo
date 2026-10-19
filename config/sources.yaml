@@ -1,0 +1,69 @@
+# Gobierna el pipeline: una fuente sin `validated: true` no se ingiere (plan §3.8).
+# Solo están validadas las que se han comprobado (términos conocidos + muestra descargada con `kb phase0`).
+# El resto queda `validated: false` hasta completar la fase 0 (términos, robots.txt, muestra de 10, licencia efectiva).
+sources:
+  wikidata:
+    validated: true
+    endpoint: https://www.wikidata.org/w/api.php
+    sparql: https://query.wikidata.org/sparql
+    license: CC0-1.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Términos Wikimedia; User-Agent identificable obligatorio.
+  wikipedia_es:
+    validated: true
+    endpoint: https://es.wikipedia.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Se fija por oldid. Atribución y CC BY-SA en todo lo derivado.
+  wikipedia_ca:
+    validated: true
+    endpoint: https://ca.wikipedia.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Se fija por oldid. Mismos términos que es.wikipedia.
+  wikipedia_en:
+    validated: true
+    endpoint: https://en.wikipedia.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Se fija por oldid. Mismos términos que es.wikipedia.
+  wikipedia_eu:
+    validated: true
+    endpoint: https://eu.wikipedia.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Se fija por oldid. Mismos términos que es.wikipedia.
+  wikipedia_gl:
+    validated: true
+    endpoint: https://gl.wikipedia.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Se fija por oldid. Mismos términos que es.wikipedia.
+  wikisource_es:
+    validated: true
+    endpoint: https://es.wikisource.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: Texto de dominio público; transcripción bajo CC BY-SA.
+  rism:             {validated: false, note: "API pública (fase 4)"}
+  imslp:            {validated: false, note: "API MediaWiki (fase 4)"}
+  iai_zarzuela:     {validated: false, note: "Goobi/IIIF/OAI-PMH sin confirmar (fase 4)"}
+  hemeroteca_bne:   {validated: false, note: "dataset de texto completo; fase 5"}
+  wikipedia_es_enlaces:
+    validated: true
+    endpoint: https://es.wikipedia.org/w/api.php
+    license: CC-BY-SA-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    notes: >-
+      Enlaces externos a YouTube (prop=extlinks) de los artículos de es.wikipedia ya capturados. Solo se guarda la URL
+      y el identificador del vídeo, nunca el vídeo; se muestra como «enlazado desde el artículo de Wikipedia», sin afirmar
+      que sea la obra (puede ser una entrevista, un fragmento o una referencia). Para cada vídeo se consulta el oEmbed público de YouTube
+      (https://www.youtube.com/oembed, 1 petición/s) solo para saber si sigue disponible y obtener título y canal. Mismos términos que wikipedia_es.

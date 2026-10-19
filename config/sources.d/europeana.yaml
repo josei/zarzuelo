@@ -1,0 +1,14 @@
+sources:
+  europeana:
+    validated: true
+    endpoint: https://api.europeana.eu/record/v2/search.json
+    license: "por objeto (campo rights de Europeana); metadatos CC0"
+    reuse: consult_only   # valor por defecto; cada objeto se marca reusable solo con PDM/CC0/CC BY/CC BY-SA
+    rate_limit_per_s: 2
+    country: Spain        # Hispana se consume a través de Europeana: filtro COUNTRY:Spain
+    queries: ["zarzuela", "\"género chico\"", "\"teatro lírico\""]
+    notes: >
+      API con clave EUROPEANA_API_KEY (cabecera X-Api-Key; nunca en URL ni en caché). robots.txt de www.europeana.eu
+      prohíbe /api e /iiif para rastreadores; se usa la API oficial con clave. Medios solo referenciados (edmIsShownBy,
+      manifiesto IIIF https://iiif.europeana.eu/presentation/<id>/manifest).
+    verified_at: "2026-10-07"

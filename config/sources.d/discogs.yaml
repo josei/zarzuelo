@@ -1,0 +1,13 @@
+sources:
+  discogs:
+    validated: false
+    endpoint: https://api.discogs.com
+    license: CC0-1.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      Pendiente: falta DISCOGS_TOKEN (token personal; añadir a .env) para ejecutar la muestra de fase 0. Conector listo
+      (kb/sources/discogs.py). Metadatos de lanzamientos/artistas/sellos CC0 (data.discogs.com); condiciones de la API
+      (60 req/min autenticado, User-Agent obligatorio) restringen imágenes y datos de usuario/marketplace: no se guardan.
+      Pasar a validated: true tras `kb source phase0 discogs` con token y muestra de 10 registros.

@@ -1,0 +1,25 @@
+# Fase 0 (solo consulta, sin rastreo). Verificado a mano el 2026-10-07; 3 páginas de muestra.
+sources:
+  juan_march_teatro_musical:
+    validated: false
+    reuse: consult_only
+    endpoint: https://www.march.es/es/coleccion/teatro-musical-espanol
+    url_patron:
+      coleccion: https://www.march.es/es/coleccion/teatro-musical-espanol
+      ficha: "https://www.march.es/es/coleccion/teatro-musical-espanol/ficha/--{id}"
+      buscador: https://www.march.es/es/coleccion/teatro-musical-espanol/buscador
+      acerca_de: https://www.march.es/es/acerca-de-coleccion-digital-teatro-musical-espanol
+    license: sin licencia de reutilización explícita (uso libre solo para investigación académica y enseñanza, con cita)
+    rate_limit_per_s: 0
+    verified_at: "2026-10-07"
+    notes: >-
+      Condiciones de uso de la colección: "Su función principal es su uso para la docencia o la
+      investigación"; "Los usuarios pueden escuchar, ver e imprimir gratuitamente sólo para su uso
+      en la investigación académica y la enseñanza y citando su procedencia y a sus autores";
+      derechos protegidos por la Ley de Propiedad Intelectual; documentos con resolución limitada
+      y marca de agua "que no debe alterarse". robots.txt de www.march.es: el buscador de TME no
+      está vetado (sí otras colecciones), pero no se rastrea. Las fichas son enlazables y
+      estables (/ficha/--<id>). Ojo: algunos ids de ficha corresponden a otras colecciones
+      de la biblioteca (comprobar que la ficha sea de TME). Recomendación: solo enlazar/citar;
+      pedir permiso si se quiere ingerir metadatos o MusicXML (docs/permisos/juan_march_teatro_musical.md).
+      Medios (audio 78 rpm, escaneos) solo como enlace.

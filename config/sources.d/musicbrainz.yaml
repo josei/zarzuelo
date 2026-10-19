@@ -1,0 +1,13 @@
+sources:
+  musicbrainz:
+    validated: true
+    endpoint: https://musicbrainz.org/ws/2
+    license: CC0-1.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      Datos núcleo (artistas, obras, grabaciones, lanzamientos) CC0; anotaciones, tags y ratings CC BY-NC-SA (no se
+      almacenan). robots.txt permite /ws/. User-Agent con contacto obligatorio (KB_USER_AGENT), 1 req/s. Sin audio ni
+      imágenes (Cover Art Archive no se usa). Enlace por musicbrainz_work/musicbrainz_artist (Wikidata P435/P434) o
+      por título normalizado exacto único entre las obras de un compositor del corpus con ID MB.

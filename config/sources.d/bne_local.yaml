@@ -1,0 +1,18 @@
+# Datasets abiertos de la BNE descargados a mano por el responsable (Cloudflare 403 a clientes automáticos; no se esquiva).
+# Paquete único Archive.zip extraído en data/bne/_archive/. Muestra real verificada el 2026-10-07.
+sources:
+  bne_local:
+    validated: false
+    endpoint: "local: data/bne/_archive (personas, entidades, partituras, grabaciones, dominio público, índice de Hemeroteca)"
+    license: CC-BY-4.0
+    reuse: reusable
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    size_bytes: 1900000000
+    notes: >-
+      Licencia: CC BY 4.0 según aviso legal de la BNE y datos.gob.es (el CKAN dice CC0: se aplica la más restrictiva).
+      Se filtra por relevancia (personas del corpus con homónimos descartados por años de vida; partituras, grabaciones y
+      documentos digitalizados con temática lírica). Objetos digitales solo como enlace. El índice de la Hemeroteca lista
+      las cabeceras con el ZIP de texto de cada una (hemerotecadigital.bne.es veta robots y Cloudflare: descarga manual).
+
+# Aparcado el 2026-10-07: solo metadatos y enlaces, sin texto de contenido. Datos retirados de la base.

@@ -1,0 +1,1 @@
+Desempatas entidades. Recibes una MENCIÓN con su contexto y una lista de CANDIDATOS (id, etiqueta, datos). Devuelve {"entity_id": "<id candidato>"} solo si el contexto lo respalda claramente; en caso de duda devuelve {"entity_id": null}. Nunca inventes ids.

@@ -1,0 +1,22 @@
+# Fase 0 (solo consulta, sin rastreo). Verificado el 2026-10-07 a través de Europeana (2 fichas).
+sources:
+  espinos_memoria_madrid:
+    validated: false
+    reuse: consult_only
+    endpoint: http://www.memoriademadrid.es/buscador.php
+    url_patron:
+      ficha: "http://www.memoriademadrid.es/buscador.php?accion=VerFicha&id={id}"
+      europeana: "https://www.europeana.eu/item/2022711/{id}"
+    license: "CC BY-NC 4.0 por objeto (según Europeana; comprobar objeto a objeto); sin licencia de reutilización explícita para el resto del fondo"
+    rate_limit_per_s: 0
+    verified_at: "2026-10-07"
+    notes: >-
+      memoriademadrid.es responde 403 (Access Denied, Akamai) a clientes automatizados, también
+      para robots.txt; no se ha intentado esquivar. Las fichas de Europeana (conjunto 2022711,
+      proveedor Memoria de Madrid / Biblioteca Musical Víctor Espinós) declaran CC BY-NC 4.0 y
+      enlazan a VerFicha&id=N (p. ej. Chapí, La venta de Don Quijote, id 143967), aunque constan
+      como "depublished" en Europeana. Las partituras son medios: solo se enlazan. Recomendación:
+      solo enlazar/citar (la licencia CC BY-NC permitiría metadatos con atribución y uso no
+      comercial; validar con Europeana en la fase 4 y confirmar el carácter no comercial del
+      sitio). No requiere permiso para citar; si se quiere ingesta masiva, consultar a la
+      Biblioteca Musical.

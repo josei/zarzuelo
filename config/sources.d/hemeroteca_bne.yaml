@@ -1,0 +1,23 @@
+# Fase 0 (2026-10-07): bloqueada en dos frentes independientes, ninguno eludido (AGENTS.md). Ver notes.
+sources:
+  hemeroteca_bne:
+    validated: false
+    endpoint: https://datosabiertos.bne.es/catalogo/api/3/action/package_search
+    license: CC0-1.0
+    reuse: consult_only
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      Datasets "Hemeroteca digital. Texto completo" y "Hemeroteca digital. Listado de títulos" (CKAN de
+      datosabiertos.bne.es, licencia declarada CC0). Dos bloqueos independientes, confirmados a mano con
+      curl: 1) datosabiertos.bne.es tiene la cadena TLS incompleta (falta la intermedia); un cliente que
+      valida certificados -el nuestro- no conecta en absoluto, ni siquiera a la API del catálogo (solo
+      funciona con `curl -k`, que no es aceptable en el conector: sería ignorar una verificación de
+      seguridad, no una protección anti-bot). 2) Los ficheros reales viven en hemerotecadigital.bne.es
+      (https://hemerotecadigital.bne.es/hd/es/fulltext-csv), que devuelve 403 (reto de Cloudflare) a clientes
+      automáticos Y cuyo robots.txt declara `Disallow: /` para cualquier robot salvo Googlebot/Bingbot. Sin
+      muestra real descargada: `validated: false`. Fallback manual: si alguien descarga esos CSV a mano (un
+      navegador sí pasa Cloudflare) y los coloca en `data/hemeroteca_bne/<texto_completo|listado_titulos>.csv`
+      (o `.csv.gz`/`.zip`), `kb source ingest hemeroteca_bne` los lee sin red. No se conocen los nombres de
+      columna reales (no se ha podido ver ni una fila): el conector no los asume, vuelca todas las columnas
+      tal cual.

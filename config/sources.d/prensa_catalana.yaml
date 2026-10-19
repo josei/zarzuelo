@@ -1,0 +1,25 @@
+# Fase 0 verificada a mano el 2026-10-07. catalonica.bnc.cat y arca.bnc.cat: robots.txt Disallow: / para
+# cualquier robot no listado expresamente (Googlebot/Bingbot/DuckDuckBot/archive.org_bot/CCBot) y sin
+# endpoint /oai/ propio (404); no se eluden. mdc.csuc.cat: robots.txt permite /oai/ y su OAI-PMH 2.0 funciona.
+sources:
+  prensa_catalana:
+    validated: true   # cubre solo el endpoint MDC (ver notes); catalonica/arca quedan bloqueados
+    endpoint: https://mdc.csuc.cat/oai/oai.php
+    license: "por registro (dc:rights): PublicDomainMark/CC/InC"
+    reuse: consult_only   # valor por defecto; cada registro se marca reusable solo con derechos abiertos
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      El plan apunta a Catalònica, ARCA y Memòria Digital de Catalunya (MDC). catalonica.bnc.cat y
+      arca.bnc.cat declaran `Disallow: /` en robots.txt salvo para buscadores listados expresamente (nuestro
+      User-Agent no lo es) y no tienen endpoint OAI propio (/oai/oai.php -> 404 en ambos): bloqueados, no se
+      elude. mdc.csuc.cat (CSUC, incluye fondos de la Biblioteca de Catalunya) sí permite /oai/ en su
+      robots.txt (solo bloquea /digital/*/search/) y su OAI-PMH 2.0 (verb Identify/ListSets/ListRecords)
+      funciona; tiene 237 colecciones, ninguna de prensa histórica general (no es realmente un conector de
+      "prensa": es lo único accesible de los tres indicados por el plan). Se cosechan solo 7 colecciones con
+      teatro líric/sarsuela catalana confirmado a mano: felippedrell, enricmorera, egranados, fonsalbeniz,
+      jmarticrist, fulletsblUB, partiturBC (p.ej. "Allegro y Recitado de la zarzuela Briseida",
+      "¡¡La Por!! : sarsuela en un acte y en vers"). Se excluyen Operistica ("Llibrets operístics 1820-1900")
+      y discografic: sus registros están TODOS borrados en MDC (status="deleted"); y jribot (Josep Ribot i
+      Calpe): es un fondo de dibujos botánicos sin relación. Cada registro cosechado se filtra además por el
+      regex de relevancia (_oai.TOPIC) antes de guardarse. Medios (imágenes) solo por referencia.

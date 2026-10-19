@@ -1,0 +1,22 @@
+# Semilla del vocabulario de géneros. Cada concepto cita su fuente (AGENTS.md): o un artículo de es.wikipedia (revisión archivada) o,
+# si el término no tiene artículo propio, un pasaje literal de un artículo archivado donde se usa. Los sinónimos de los conceptos con
+# artículo son las redirecciones de Wikipedia (filtrando derivados como «zarzuelero»).
+articles:            # concepto con artículo propio
+  - {title: "Zarzuela"}
+  - {title: "Tonadilla"}
+  - {title: "Género chico"}
+  - {title: "Sainete"}
+  - {title: "Revista musical"}
+  - {title: "Opereta"}
+  - {title: "Ópera cómica"}
+  - {title: "Juguete cómico"}
+  - {title: "Ópera española"}
+  - {title: "Sarsuela"}
+  - {title: "Ópera"}
+terms:               # términos de uso en las fuentes sin artículo propio; la fuente es el pasaje donde se usan
+  - {label: "sainete lírico", find: "sainete lírico", in: ["Sainete", "Género chico", "Zarzuela"], broader: "Sainete"}
+  - {label: "género ínfimo",  find: "género ínfimo",  in: ["Zarzuela", "Género chico"], broader: "Revista musical"}
+  - {label: "comedia lírica", find: "comedia lírica", in: ["Zarzuela", "Género chico"]}
+  - {label: "zarzuela barroca", find: "zarzuela barroca", in: ["Manuel de Sumaya", "Clementina (zarzuela)", "Zarzuela"]}
+  - {label: "zarzuela grande",  find: "zarzuela grande",  in: ["Zarzuela", "Género chico"]}
+  - {label: "Zarzuelita",       find: "zarzuelita",       in: ["Género chico", "Zarzuela"]}

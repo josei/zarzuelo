@@ -1,0 +1,17 @@
+# Alcance (plan §1 bis). Los géneros son conceptos del vocabulario; ampliar o recortar es configuración.
+years: {from: 1650, to: 1960}
+core:
+  - zarzuela barroca
+  - tonadilla escénica
+  - ópera española
+  - zarzuela grande
+  - género chico
+  - zarzuela del siglo XX
+  - opereta española
+  - género ínfimo
+  - revista y variedades
+  - sarsuela catalana
+periphery:   # solo si enlaza con el núcleo
+  - cuplé y canción española
+  - danza y bailes teatrales
+  - música incidental

@@ -1,0 +1,17 @@
+# Fase 0 (verificada en vivo el 2026-10-07): bloqueada por reto Cloudflare. Ver docstring de pipeline/kb/sources/bvmc.py.
+sources:
+  bvmc:
+    validated: false
+    endpoint: http://data.cervantesvirtual.com/sparql
+    license: sin licencia de reutilización explícita
+    reuse: consult_only
+    rate_limit_per_s: 0.5
+    verified_at: "2026-10-07"
+    notes: >-
+      El endpoint SPARQL documentado (data.cervantesvirtual.com/sparql) responde con un reto de Cloudflare
+      ("Just a moment...") a clientes automatizados; no se esquiva (sin navegador headless ni cookies de
+      reto). Las páginas de recurso individuales (data.cervantesvirtual.com/person/N, etc.) sí responden 200,
+      pero son la plantilla HTML de "BVMC.Labs" sin RDF real por negociación de contenido (Accept:
+      application/rdf+xml o application/ld+json devuelven la misma página HTML con solo un JSON-LD genérico
+      de SEO). Raspar esa plantilla no documentada queda fuera de la fase 0. Repetir si Cloudflare libera el
+      endpoint o si la biblioteca ofrece otra vía.

@@ -1,0 +1,20 @@
+# Fase 0 verificada el 2026-10-07 contra rism.online (en vivo).
+sources:
+  rism:
+    validated: true
+    endpoint: https://rism.online
+    license: CC-BY-NC-SA-4.0
+    reuse: consult_only
+    rate_limit_per_s: 0.2
+    verified_at: "2026-10-07"
+    notes: >-
+      Resource API documentada (https://rism.online/docs/api/resource-api/): JSON-LD por negociación de
+      contenido (Accept: application/ld+json) en /sources/{id}, /works/{id}, /people/{id}, /institutions/{id}.
+      robots.txt permite /sources/ y /works/ (y, por omisión, /people/ e /institutions/, no mencionados) pero
+      PROHÍBE /search? -que es la ruta de la Search API oficial documentada en /docs/api/search-api/- y /api/.
+      No se usa /search ni se esquiva: el descubrimiento es conservador, a partir de identificadores RISM ya
+      enlazados a personas del corpus vía Wikidata (P5504, formato "people/NNN"), siguiendo
+      /{id}/sources (permitido, lista las fuentes de esa persona) y luego /sources/{id} (permitido, registro
+      completo: compositor, fecha, institución depositaria, signatura). Licencia: "Reuse of RISM's own texts
+      is permitted under CC BY-NC-SA 4.0" (rism.info/rism_online_catalog/.../how-to-cite-rism-records.html);
+      por la cláusula NC se trata como consult_only. Crawl-delay: 5 en robots.txt -> 0.2 peticiones/s.

@@ -1,0 +1,253 @@
+# Generado por `kb vocab build` (Wikidata) y `kb vocab seed` (Wikipedia); cada concepto cita su fuente.
+concepts:
+- id: kb:genre:comedia-lírica
+  pref_label: comedia lírica
+  alt_labels: []
+  scope_note: Comedia lírica. Con un solo decorado, pocos personajes y ausencia de
+    coros. Propia para escenarios pequeños.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Género_chico&oldid=174113719
+  broader: []
+- id: Q583236
+  pref_label: género chico
+  scope_source: https://es.wikipedia.org/w/index.php?title=Género_chico&oldid=174113719
+  broader:
+  - Q148163
+  alt_labels:
+  - Genero chico
+  - Género cómico
+  scope_note: El género chico es un género español de arte escénico y lírico. Es un
+    subgénero de la zarzuela de formato breve típicamente en un acto, contrapuesto
+    al género grande, que corresponde a obras de mayor duración.
+- id: kb:genre:género-ínfimo
+  pref_label: género ínfimo
+  alt_labels: []
+  scope_note: Paralelamente, se empieza a dar el apelativo de género ínfimo a las
+    representaciones conocidas como revistas. Son obras musicales con conexión a algunas
+    ideas de la zarzuela pero más ligeras y atrevidas, con números escénicos que,
+    en la época se calificaron de «verdes», es decir, pícaros para los tiempos de
+    hoy, que hablaban o ponían sobre la mesa la evolución de la sociedad sobre temas
+    sexuales y con letras de doble intención, en casi todas hay «cuplés». Una de estas
+    obras fue La corte de Faraón, basada en la opereta francesa Madame Putiphar. La
+    música se hizo tan popular que algunos de sus números acabaron siendo verdaderos
+    cuplés difundidos por el público.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Zarzuela&oldid=173361795
+  broader:
+  - Q918727
+- id: Q5954513
+  pref_label: juguete cómico
+  alt_labels:
+  - Juguete comico
+  - Juguete comico lirico
+  - Juguete comico lírico
+  - Juguete comico-lirico
+  - Juguete comico-lírico
+  - Juguete cómico lirico
+  - Juguete cómico lírico
+  - Juguete cómico-lirico
+  - Juguete cómico-lírico
+  scope_note: Los juguetes cómicos, subgénero dentro del Género Chico, fueron piezas
+    teatrales compuestas en un acto que solíanse representar en España durante el
+    siglo XIX. Podían ser piezas exclusivamente dramáticas o lírico-dramáticas, en
+    el caso de que se intercalaran canciones y bailes populares por aquella época
+    (polkas, machichas, garrotín, etc.). Fueron muy populares en lo que se llamó Teatro
+    por horas.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Juguete_cómico&oldid=175193980
+  broader:
+  - Q583236
+- id: Q170384
+  pref_label: Opereta
+  alt_labels:
+  - Operetas
+  - Operetta
+  - Opérette
+  scope_note: La opereta es un género musical derivado de la ópera que nace y se desarrolla
+    a lo largo del siglo XIX, primero en París y después en Viena. Se trata de un
+    tipo de ópera musical animado cuya característica fundamental consiste en contar
+    con una trama inverosímil y disparatada. Consta de diálogos hablados, entre los
+    que se intercalan historietas, llamadas Couplets por los franceses (Copla, en
+    español dependiendo), y bailes como el rigodón o el cancán. Se trata, por lo tanto,
+    de un espectáculo escénico con sucesión y alternancia de artes musicales, habladas
+    y cantadas.​​​​​​​​​​
+  scope_source: https://es.wikipedia.org/w/index.php?title=Opereta&oldid=174154671
+  broader: []
+- id: Q918727
+  pref_label: Revista
+  alt_labels:
+  - Revista musical
+  - Revista teatral
+  - Revistas musicales
+  - Revisteril
+  - Teatro revisteril
+  scope_note: 'Revista (en francés: revue) es un subgénero dramático de la comedia
+    que se desenvuelve en un tipo de espectáculo que combina música, baile y, muchas
+    veces, también breves escenas teatrales o sketches humorísticos o satíricos. La
+    revista combina elementos dramáticos del burlesque, el vaudeville, la extravaganza
+    y la comedia musical,​ pero se distingue de todos ellos anteriores por su carga
+    erótica y simpleza dramática. Como en la opereta y el musical, la revista fusiona
+    música, baile y textos en una función, aunque sin un hilo argumental. Gozó de
+    especial popularidad a lo largo del siglo XX en Argentina, donde adquirió la forma
+    de «revista porteña» y se convirtió en un icono cultural de la ciudad de Buenos
+    Aires.'
+  scope_source: https://es.wikipedia.org/w/index.php?title=Revista_(género)&oldid=175326455
+  broader: []
+- id: Q835067
+  pref_label: Sainete
+  alt_labels:
+  - Sainete criollo
+  - Sainete valenciano
+  - Sainetes
+  scope_note: El sainete es una pieza dramática jocosa en un acto, de carácter costumbrista
+    y popular, representado en España durante el intermedio o al final de una función.
+    Sustituyó al entremés en los siglos xviii, xix y xx.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Sainete&oldid=174780038
+  broader: []
+- id: kb:genre:sainete-lírico
+  pref_label: sainete lírico
+  alt_labels: []
+  scope_note: El "sainete lírico" como forma del género chico
+  scope_source: https://es.wikipedia.org/w/index.php?title=Género_chico&oldid=174113719
+  broader:
+  - Q835067
+- id: Q3622181
+  pref_label: tonadilla
+  scope_source: https://es.wikipedia.org/w/index.php?title=Tonadilla&oldid=168039156
+  alt_labels:
+  - Tonadilla escénica
+  - Tonadillas
+  scope_note: Tonadilla es una canción tradicional española que tiene su origen en
+    las jácaras del Siglo de Oro Español. Dichas jácaras eran canciones que se acompañaban
+    con instrumentos y se interpretaban en los entreactos de una función de teatro,
+    alternando con números de baile. La letra de las jácaras relataba en un lenguaje
+    vulgar temas de la picaresca.​ Los intérpretes de este aire fueron llamados tonadilleros,
+    nombre que heredaron luego las cupletistas del siglo XX. Famosas tonadilleras
+    fueron Catalina Pacheco, María la Granadina y María Antonia Vallejo La Caramba.​
+    Se conservan catalogadas dos mil tonadillas, muchas de ellas gracias al musicólogo
+    José Subirá, principal estudioso del género.​ Entre los autores de las letras
+    están los ilustres escritores don Ramón de la Cruz y Tomás de Iriarte.
+- id: Q148163
+  pref_label: zarzuela
+  scope_source: https://es.wikipedia.org/w/index.php?title=Zarzuela&oldid=173361795
+  alt_labels:
+  - Género grande
+  - Zarzuela grande
+  - Zarzuelas
+  scope_note: La zarzuela es una forma de música teatral o género musical escénico
+    surgido en España que se distingue principalmente por contener partes instrumentales,
+    partes vocales (solos, dúos, coros...) y partes habladas, aunque existen excepciones
+    en las que estas últimas, las partes habladas, están completamente ausentes. El
+    término «zarzuela», aplicado al género musical y teatral, procede del Palacio
+    de la Zarzuela, palacio real español situado en las proximidades de Madrid y en
+    el que se hallaba el teatro que albergó las primeras representaciones del género.
+- id: Q121078178
+  pref_label: zarzuela barroca
+  alt_labels: []
+  scope_note: La ambigüedad de tal clasificación, coincidente con clasificaciones
+    de óperas italianas con fine tragico compuestas en la época, apunta a la probabilidad
+    de que, en realidad, El Rodrigo sea la primera ópera mexicana. Tal especulación
+    no se podrá solucionar hasta que la investigación avance al respecto. Sobre el
+    estilo de ambas óperas solo caben conjeturas,ya que la música no se ha conservado;
+    sin embargo, la familiaridad de Sumaya con libretos italianos y su contacto con
+    el duque de Linares, un aficionado a la ópera italiana, parecen indicios suficientes
+    para afirmar que, al menos La Parténope,se escribió en estilo italiano, superando
+    el lenguaje de la zarzuela barroca presente en La Púrpura de la Rosa de Tomás
+    de Torrejón (1701), sobre texto castellano de Calderón.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Manuel_de_Sumaya&oldid=174936945
+  broader:
+  - Q148163
+- id: Q5638059
+  pref_label: Zarzuela en catalán
+  alt_labels:
+  - Sarsuela
+  - Zarzuela catalana
+  - Zarzuela en catalan
+  - Zarzuela valenciana
+  - sarsuela
+  - zarzuela catalana
+  scope_note: La zarzuela en catalán, o a menudo también zarzuela catalana o sarsuela,
+    es una zarzuela escrita y cantada en catalán (o bilingüe en castellano y catalán).
+    En total, se han catalogado 424 obras líricas con texto en catalán producidas
+    entre 1850 y 1950, muchas de ellas zarzuelas.​
+  scope_source: https://es.wikipedia.org/w/index.php?title=Zarzuela_en_catalán&oldid=173360616
+  broader:
+  - Q148163
+- id: Q120031006
+  pref_label: zarzuela grande
+  alt_labels:
+  - género grande
+  scope_note: 'Después de la Revolución de 1868, el país entró en una profunda crisis
+    (sobre todo económica) que se reflejó también en el teatro: el espectáculo teatral
+    se convirtió en un entretenimiento caro, al alcance de pocos bolsillos. Fue entonces
+    cuando el Teatro Variedades de Madrid tuvo la idea de reducir la duración de la
+    representación, para abaratar el precio del espectáculo: la función teatral, que
+    hasta entonces duraba unas cuatro horas, se redujo a una hora, lo que se llamó
+    teatro por horas. La innovación tuvo un gran éxito y los compositores de zarzuelas
+    se acomodaron al nuevo formato, creando obras mucho más cortas cuyo verdadero
+    triunfo tardó diez años, hasta 1879. A las zarzuelas de un solo acto se las clasificó
+    como género chico y a las de dos o más actos, género grande. La zarzuela grande
+    se mantuvo en el Teatro de la Zarzuela de Madrid, aunque con poco éxito y poco
+    público. A pesar de esto, en 1873 se abrió un nuevo teatro Apolo de Madrid, que
+    compartió los fracasos con el anterior, por querer hacerle un lugar para el drama
+    y la comedia, hasta que no tuvo más remedio que cambiar el espectáculo al género
+    chico en el que triunfó durante decenios.'
+  scope_source: https://es.wikipedia.org/w/index.php?title=Zarzuela&oldid=173361795
+  broader:
+  - Q148163
+- id: Q9097576
+  pref_label: Zarzuelita
+  alt_labels:
+  - Breve zarzuelita en un acto
+  - Zarzuela bufa
+  - Zarzuela chica
+  - Zarzuela comica
+  - Zarzuela comica historica
+  - Zarzuela comica histórica
+  - Zarzuela comica pueblerina
+  - Zarzuela comprimida
+  - Zarzuela cómica
+  - Zarzuela cómica histórica
+  - Zarzuela cómica pueblerina
+  - breve zarzuelita
+  - sarsuela còmic
+  - sarsuela petita
+  - sarsueleta
+  - zarzuela chica
+  - zarzuela comprimida
+  scope_note: Zarzuelita
+  scope_source: https://es.wikipedia.org/w/index.php?title=Zarzuela&oldid=173361795
+  broader:
+  - Q583236
+- id: Q1344
+  pref_label: Ópera
+  alt_labels:
+  - Operística
+  - Operístico
+  - Operistica
+  - Operistico
+  - Género operístico
+  - Genero operistico
+  scope_note: El término ópera (del italiano òpera, "obras musicales") designa un
+    género de música teatral en el que una acción escénica se armoniza, se canta y
+    tiene acompañamiento instrumental. Las representaciones suelen ofrecerse en teatros
+    de ópera, acompañadas por una orquesta o una agrupación musical menor. Forma parte
+    de la tradición de la música clásica europea y occidental.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Ópera&oldid=174136084
+  broader: []
+- id: Q3194747
+  pref_label: Ópera cómica
+  alt_labels:
+  - Opera Comique
+  - Opera comica
+  - Opera-Comique
+  - Ópera comica
+  scope_note: null
+  scope_source: https://es.wikipedia.org/w/index.php?title=Ópera_cómica&oldid=172992665
+  broader: []
+- id: Q7573432
+  pref_label: Ópera española
+  alt_labels:
+  - Ópera en español
+  scope_note: La ópera española es el arte de la ópera en España, aunque también puede
+    significar la ópera en idioma español. La ópera ha existido en España desde mediados
+    del siglo XVII.
+  scope_source: https://es.wikipedia.org/w/index.php?title=Ópera_española&oldid=168108034
+  broader: []

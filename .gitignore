@@ -1,0 +1,35 @@
+# Secretos (claves de Europeana, Discogs…): solo en local
+.env
+.env.*
+!.env.example
+
+# Datos descargados y base de trabajo (bronze/silver): se regeneran con el pipeline; no se publican (hay fuentes consult_only)
+data/
+
+# Sitio estático: `make site` lo deja en site/ (worktree de la rama gh-pages, que es la que publica GitHub Pages)
+site/
+
+# Derivados del esquema y de la exportación
+web/public/api/v1/
+web/src/api/types.ts
+
+# Entornos y compilación
+.venv/
+node_modules/
+web/dist/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Registros, PID y sistema/editor
+*.log
+*.pid
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Borradores de correo personales (con datos de contacto), sin enviar
+docs/permisos/

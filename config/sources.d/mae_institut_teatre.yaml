@@ -1,0 +1,23 @@
+# Fase 0 verificada el 2026-10-07 contra escena.cdmae.cat (en vivo).
+sources:
+  mae_institut_teatre:
+    validated: true
+    endpoint: https://escena.cdmae.cat
+    license: sin licencia de reutilización explícita (estudio o investigación con cita)
+    reuse: consult_only
+    rate_limit_per_s: 1
+    verified_at: "2026-10-07"
+    notes: >-
+      DSpace 7. robots.txt desautoriza /discover y /search-filter (interfaz web de búsqueda) pero NO las
+      rutas usadas aquí: /server/api/discover/search/objects (REST, relevancia; 4657 resultados reales para
+      query=zarzuela, usado en fase0 como muestra rápida) y /server/oai/request (OAI-PMH; Identify y
+      ListSets confirmados en vivo: repositoryName "DSpace 7 IT", 93 sets). La ingesta usa el cosechador
+      OAI-PMH mínimo (_catalog.oai_harvest, ListRecords con resumptionToken) sobre el set "Programes"
+      (col_20.500.12268_112880, completeListSize=18870 verificado), que es la colección descrita en el plan
+      ("programas y carteles... con fecha y teatro"), y filtra por dc:subject = Sarsuela/Zarzuela (etiqueta
+      de género verificada en registros reales de esa colección: "Sarsuela" aparece en el vocabulario de
+      materias). Se evita así contar objetos que solo mencionan "Teatro de la Zarzuela" como nombre de sala
+      (falso positivo real observado con la búsqueda REST de texto libre, p. ej. una foto de "Don Carlo" de
+      Verdi). Licencia (dc:rights real): "Accés permès amb finalitat d'estudi o recerca, citant l'autor i la
+      font: Escena Digital de Catalunya. MAE. Institut del Teatre. Per a qualsevol altre ús cal demanar
+      autorizació" -> consult_only.

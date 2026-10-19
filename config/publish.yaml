@@ -1,0 +1,3 @@
+# Política de publicación. Los resúmenes narrativos los escribe un modelo local pequeño (Qwen); en las revisiones con Haiku, casi 3 de cada 10
+# frases no se sostienen. Por eso, por defecto SOLO se publican los resúmenes que un segundo modelo ha revisado y aprobado.
+publish_unverified_summaries: false
